@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information system</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Info">
+      <div class="head">
+        <h1>Information</h1>
+        <h3>An information management system</h3>
+      </div>
+      <div class="input">
+        <input
+          onkeyup="hideButton()"
+          type="text"
+          placeholder="Title"
+          id="Title"
+        />
+        <div class="Total">
+          <input
+            onkeyup="getTotal(), hideButton()"
+            type="number"
+            placeholder="Price"
+            id="Price"
+          />
+          <input
+            onkeyup="getTotal(), hideButton()"
+            type="number"
+            placeholder="Tax"
+            id="Tax"
+          />
+          <input
+            onkeyup="getTotal(), hideButton()"
+            type="number"
+            placeholder="Ads"
+            id="Ads"
+          />
+          <input
+            onkeyup="getTotal(), hideButton()"
+            type="number"
+            placeholder="Discount by percentage"
+            id="Discount"
+          />
+          <small id="Total">0</small>
+        </div>
+        <input
+          onkeyup="hideButton()"
+          type="number"
+          placeholder="Duplicate"
+          id="Duplicate"
+        />
+        <input
+          onkeyup="hideButton()"
+          type="text"
+          placeholder="Category"
+          id="Category"
+        />
+        <button id="add">Save</button>
+      </div>
+      <div class="output">
+        <div class="searchBlock">
+          <h5>What are you looking for?</h5>
+          <input
+            onkeyup="searchData(this.value)"
+            type="text"
+            id="Search"
+            placeholder="Search"
+          />
+          <div class="btnSearch">
+            <button onclick="getSearchMode(this.id)" id="searchCategories">
+              Categories
+            </button>
+            <button onclick="getSearchMode(this.id)" id="searchTitle">
+              Titles
+            </button>
+          </div>
+        </div>
+        <div class="list">
+          <h4>Here are the items on the list</h4>
+          <div id="deleteAll"></div>
+          <table>
+            <tr>
+              <th>Id</th>
+              <th>Titles</th>
+              <th>Prices</th>
+              <th>Taxes</th>
+              <th>Ads</th>
+              <th>Discounts</th>
+              <th>Totals</th>
+              <th>Categories</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

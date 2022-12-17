@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Monocraft";
+  src: url(fonts/Monocraft.otf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  transition: all 0.4s;
+  font-family: "Monocraft", sans-serif;
+}
+body {
+  background-color: #1d2433;
+  color: #d7dce2;
+}
+
+.Info {
+  width: 80%;
+  margin: auto;
+}
+
+.head {
+  text-align: center;
+  margin: 10px 0;
+  color: #ffae57;
+  text-shadow: 2px 4px 4px #9b6833a8;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #171c28;
+  margin: 4px 0;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+}
+.Total input {
+  width: 20%;
+  text-align: center;
+}
+input:focus {
+  background-color: #a2aabc;
+  border-radius: 2px;
+  transform: scale(1.1);
+}
+#Total {
+  background-color: #ef6b73;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#Total::before {
+  content: "Total: ";
+}
+
+button {
+  transition: all 0.7s;
+  width: 102%;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: #bae67e;
+  font-size: 150%;
+}
+
+button:hover {
+  background-color: #799551;
+  transform: scale(1.1);
+}
+.btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBlock {
+  margin-top: 5%;
+}
+.btnSearch button {
+  width: 45%;
+}
+
+td button {
+  font-size: 100%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.list {
+  margin: 20px 0;
+}
+table th {
+  background-color: #171c28;
+  text-transform: capitalize;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+table,
+th,
+td {
+  border: 5px;
+  border-color: #171c28;
+  border-style: inset;
+  background-color: #171c28;
+}
+
+#Search {
+  height: 50px;
+  font-size: large;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
